@@ -5,6 +5,7 @@ import joblib
 from datetime import datetime
 from scipy.optimize import curve_fit
 import torch.nn as nn
+import os
 # --------------------------------------------
 # 模型定义
 # --------------------------------------------
@@ -23,10 +24,10 @@ class MLPImputer(nn.Module):
 # --------------------------------------------
 # 加载 scaler 和模型
 # --------------------------------------------
-x_scaler = joblib.load("model\\x_scaler.pkl")
-y_scaler = joblib.load("model\\y_scaler.pkl")
+x_scaler = joblib.load(os.path.join("model", "x_scaler.pkl"))
+y_scaler = joblib.load(os.path.join("model", "y_scaler.pkl"))
 
-def load_model(path="model\\mlp_model.pt"):
+def load_model(path=os.path.join("model", "mlp_model.pt")):
     model = MLPImputer(input_dim=11, hidden_dim=64)
     model.load_state_dict(torch.load(path, map_location="cpu"))
     model.eval()
