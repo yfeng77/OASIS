@@ -1,4 +1,11 @@
 streamlit
 torch
-requests
+pandas
 numpy
+scikit-learn
+requests
+matplotlib
+geopandas
+contextily
+shapely
+pyproj
