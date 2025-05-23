@@ -12,7 +12,6 @@
 [https://fpoasis.streamlit.app/](https://fpoasis.streamlit.app/)
 
 ![App Screenshot](./docs/screenshot.jpg)
----
 
 ## 🎯 Key Features
 
@@ -22,14 +21,11 @@
 - 🧠 Transformer + Adversarial Diffusion model backend with tidal conditioning
 - 🗺️ Geospatial map visualization and salinity trajectory display
 
----
-
 ## 📊 Example Usage
 - 🌐 Query salinity at Fort Pierce Inlet for a given time and location
 - 📂 Upload a CSV file with time, latitude, and longitude columns ([Download Sample CSV](./data/20160616.csv))
 - 🗺️ Visualize salinity values on a color map with drift trajectories
 
----
 ## 🧠 Model
 The model imputes salinity based on:
 - 📅 Temporal features: hour, minute, day, month (sin/cos encoded)
