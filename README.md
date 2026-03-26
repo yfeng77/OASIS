@@ -3,7 +3,8 @@
 > 📝 This repository accompanies the paper:  
 > **"OASIS: Harnessing Adversarial Diffusion Network for Ocean Salinity Imputation using Sparse Drifter Trajectories"**  
 > *(Accept by CIKM 2025)*
-> [PDF Link](https://arxiv.org/abs/2508.21570)
+> [arXiv](https://arxiv.org/abs/2508.21570)
+> [ACM](https://dl.acm.org/doi/pdf/10.1145/3746252.3761541)
 > 
 **OASIS** is a web-based system for reconstructing sparse ocean salinity. It is designed for offshore and coastal scenarios where drifter data is sparse, noisy, or irregular. Powered by a adversarial diffusion framework, OASIS supports on-demand interactive and batch-mode salinity imputation with integrated access to NOAA tide data.
 
